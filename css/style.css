@@ -631,3 +631,9 @@ footer {
         border: 1px solid #ddd !important;
     }
 }
+/* User Photo Gallery */
+#user-gallery .gallery-img {
+  height: 250px;
+  width: 100%;
+  object-fit: cover;
+}

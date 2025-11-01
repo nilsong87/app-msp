@@ -191,6 +191,39 @@ section {
 }
 
 /* Card Styles - CORREÇÕES MOBILE */
+#attractions .card {
+    height: 450px; /* Altura fixa para os cards */
+    display: flex;
+    flex-direction: column;
+}
+
+#attractions .card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+#attractions .card-body {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 20px;
+}
+
+#attractions .card-title {
+    height: 50px; /* Altura fixa para o título */
+    overflow: hidden;
+}
+
+#attractions .card-text {
+    height: 100px; /* Altura fixa para o texto */
+    overflow: hidden;
+    flex-grow: 1;
+}
+
+#attractions .d-flex.justify-content-between.align-items-center {
+    margin-top: auto;
+}
+
 #news .row {
     display: flex;
     flex-wrap: wrap;

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Morro de São Paulo | Tirolesa</title>
+    <title>Morro de São Paulo | Planejar Viagem</title>
 
     <!-- Bootstrap 5 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -16,12 +16,6 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;700&display=swap"
         rel="stylesheet">
-
-    <!-- AOS Animation -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
-    <!-- Glide.js -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.6.0/css/glide.core.min.css">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
@@ -53,10 +47,10 @@
                         <a class="nav-link" href="index.html#services">Serviços</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="tirolesa.html">Atrações</a>
+                        <a class="nav-link" href="index.html#attractions">Atrações</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html#accommodation">Hospedagem</a>
+                        <a class="nav-link" href="hoteis-confortaveis.html">Hospedagem</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="index.html#contact">Contato</a>
@@ -70,42 +64,53 @@
         </div>
     </nav>
 
-    <!-- Hero Section for Tirolesa -->
-    <section class="hero-subpage" style="background-image: url('images/praias/tirolaser.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center;">
-        <div class="container">
-            <div class="row">
-                <div class="col-12" data-aos="fade-up">
-                    <h1>Tirolesa de Morro de São Paulo</h1>
-                    <p>A maior tirolesa com queda no mar do Brasil!</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Content Section for Tirolesa -->
-    <section id="tirolesa-details" class="py-5">
+    <!-- Plan Your Trip Section -->
+    <section id="plan-trip" class="py-5">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 mx-auto">
-                    <h2 class="mb-4">A Aventura da Tirolesa</h2>
-                    <p>A Tirolesa de Morro de São Paulo é uma das atrações mais emocionantes e famosas da região. Considerada a maior tirolesa do Brasil com queda no mar, ela oferece uma experiência inesquecível para os amantes de aventura.</p>
-                    <p>Com cerca de 70 metros de altura e 340 metros de extensão, a tirolesa proporciona uma descida emocionante que dura aproximadamente 20 a 30 segundos, terminando com um refrescante mergulho nas águas cristalinas da Primeira Praia.</p>
-
-                    <h3 class="mt-5 mb-3">Detalhes da Atração</h3>
-                    <ul>
-                        <li><strong>Ponto de Partida:</strong> A aventura começa no Farol do Morro, um dos pontos mais altos da ilha, oferecendo uma vista panorâmica espetacular.</li>
-                        <li><strong>Ponto de Chegada:</strong> A descida termina diretamente nas águas da Primeira Praia, proporcionando um mergulho revigorante.</li>
-                        <li><strong>Altura e Extensão:</strong> Com aproximadamente 70 metros de altura e 340 metros de extensão, é uma experiência de tirar o fôlego.</li>
-                        <li><strong>Vista Panorâmica:</strong> Durante a descida, você terá uma vista privilegiada do oceano Atlântico e das praias, com a sensação de voar sobre a paisagem.</li>
-                    </ul>
-
-                    <h3 class="mt-5 mb-3">Informações Importantes</h3>
-                    <ul>
-                        <li><strong>Segurança:</strong> A segurança é prioridade. A equipe oferece equipamentos e instruções detalhadas para garantir uma experiência segura e divertida.</li>
-                        <li><strong>Custo:</strong> O valor da descida pode variar, sendo uma atração paga à parte.</li>
-                        <li><strong>Dicas:</strong> Use roupas leves e confortáveis, e calçado fechado e seguro. Não se esqueça do protetor solar. Para filmagens, utilize câmeras GoPro com cinto peitoral ou clipe para fixar no capacete.</li>
-                        <li><strong>Acesso:</strong> Para chegar à tirolesa, você passará por um percurso que inclui subidas e escadarias, partindo da praça principal da vila.</li>
-                    </ul>
+                    <h2 class="mb-4">Planeje Sua Viagem</h2>
+                    <p>Preencha o formulário abaixo para que possamos ajudar a planejar a sua viagem dos sonhos para Morro de São Paulo.</p>
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Nome Completo</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">E-mail</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="arrival-date" class="form-label">Data de Chegada</label>
+                                <input type="date" class="form-control" id="arrival-date" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="departure-date" class="form-label">Data de Saída</label>
+                                <input type="date" class="form-control" id="departure-date" required>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="people" class="form-label">Número de Pessoas</label>
+                            <input type="number" class="form-control" id="people" min="1" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="accommodation" class="form-label">Tipo de Hospedagem</label>
+                            <select class="form-select" id="accommodation">
+                                <option selected>Escolha...</option>
+                                <option value="pousada">Pousada</option>
+                                <option value="hotel">Hotel</option>
+                                <option value="resort">Resort</option>
+                                <option value="casa">Casa de Aluguel</option>
+                                <option value="outro">Outro</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="observations" class="form-label">Observações</label>
+                            <textarea class="form-control" id="observations" rows="3"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar Solicitação</button>
+                    </form>
                 </div>
             </div>
         </div>
@@ -119,8 +124,6 @@
                     <h4 class="mb-4">Morro de São Paulo</h4>
                     <p>O guia completo para explorar um dos destinos mais belos do Brasil. Descubra praias paradisíacas,
                         cultura vibrante e experiências inesquecíveis.</p>
-
-
                 </div>
                 <div class="col-lg-2 col-md-6 mb-4 footer-links">
                     <h5>Links Rápidos</h5>
@@ -135,7 +138,7 @@
                     <h5>Informações</h5>
                     <ul>
                         <li><a href="como-chegar.html">Como Chegar</a></li>
-                        <li><a href="index.html#accommodation">Onde Ficar</a></li>
+                        <li><a href="hoteis-confortaveis.html">Onde Ficar</a></li>
                         <li><a href="#">Onde Comer</a></li>
                         <li><a href="eventos.html">Eventos</a></li>
                     </ul>
@@ -161,38 +164,8 @@
         </div>
     </footer>
 
-
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.6.0/glide.min.js"></script>
-
-    <!-- Firebase -->
-    <script type="module">
-        // Import the functions you need from the SDKs you need
-        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
-        import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-analytics.js";
-        // TODO: Add SDKs for Firebase products that you want to use
-        // https://firebase.google.com/docs/web/setup#available-libraries
-
-        // Your web app's Firebase configuration
-        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-        const firebaseConfig = {
-            apiKey: "AIzaSyADIhvH7Ppi6oLQ92ofgzqX4FSNHloVcFw",
-            authDomain: "app-msp-6f493.firebaseapp.com",
-            projectId: "app-msp-6f493",
-            storageBucket: "app-msp-6f493.firebasestorage.app",
-            messagingSenderId: "950425906145",
-            appId: "1:950425906145:web:5f0b96f7a167e05fee80a0",
-            measurementId: "G-TZRT7707EB"
-        };
-
-        // Initialize Firebase
-        const app = initializeApp(firebaseConfig);
-        const analytics = getAnalytics(app);
-    </script>
-
-
     <script src="js/script.js"></script>
 </body>
 
